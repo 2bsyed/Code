@@ -14,7 +14,7 @@ int main()
     }
     else
     {
-        printf("special");
+        printf("Special");
     }
     return 0;
 }
