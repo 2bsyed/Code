@@ -1,6 +1,9 @@
 #include<stdio.h>
 int main(){
-    int a,b,c,d;
-    scanf("%d.%d.%d-%d",&a,&b,&c,&d);
-    printf("%d\n%d\n%d\n%d\n",a,b,c,d);
+    int a,b,sum=0;
+    scanf("%d %d",&a,&b);
+    for(a=a;a<=b;a++)
+    sum+=a;
+    printf("%d\n",sum);
+    return 0;
 }
