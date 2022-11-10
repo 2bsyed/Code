@@ -1,1 +1,1 @@
-const int *
+declaredStr)

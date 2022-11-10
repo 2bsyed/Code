@@ -3,10 +3,10 @@
 
 int main() {
     /**
-    • each pointer points to one string
-    • follow the string through the pointer
-    • go to the next string using one for-loop
-    • because strcpy, strcmp, strlen all expect pointers, we can use these by
+    ï¿½ each pointer points to one string
+    ï¿½ follow the string through the pointer
+    ï¿½ go to the next string using one for-loop
+    ï¿½ because strcpy, strcmp, strlen all expect pointers, we can use these by
     passing an array element (since each array element is a pointer to a string)
     **/
 
