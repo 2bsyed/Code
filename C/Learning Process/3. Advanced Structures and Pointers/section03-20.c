@@ -23,7 +23,7 @@ that matches s2, or NULL if the substring is not present
 
 int main() {
     char s1[] = "123abc123";
-    char s2[] = "abcfasdfasdf";
+    char s2[] = "abc";
 
     char *p = strstr(s1, s2);
     if(p == NULL) printf("null");

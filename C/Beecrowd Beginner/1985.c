@@ -11,7 +11,7 @@ int main(){
             sum+=1.50*a;
             break;
             case 1002:
-            sum+=2.05*a;
+            sum+=2.50*a;
             break;
             case 1003:
             sum+=3.50*a;
