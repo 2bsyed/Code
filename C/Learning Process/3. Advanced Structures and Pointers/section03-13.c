@@ -10,6 +10,7 @@ typedef struct {
 int main() {
 
     person p1;
+    
     p1.age = 20;
     person *p = &p1;
 
