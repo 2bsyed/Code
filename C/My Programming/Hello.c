@@ -13,5 +13,5 @@ int main()
     scanf("%d", &c);
     max = (max < c) ? c : max;
     min = (min > c) ? c : min;
-    printf("Max = %d Min = %d", max, min);
+    printf("Max = %d Min = %d\n", max, min);
 }
