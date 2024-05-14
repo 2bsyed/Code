@@ -1,9 +1,9 @@
 /**
-• addr1 and addr2 are pointers pointing to real numbers (floating numbers)
+ï¿½ addr1 and addr2 are pointers pointing to real numbers (floating numbers)
 - content of addr1 is -45.78
 - content of addr2 is 678.89
 
-• write a program that displays the
+ï¿½ write a program that displays the
 values of addr1, addr2 and their contents
 
 **/

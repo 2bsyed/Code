@@ -1,0 +1,28 @@
+class ChatGPT:
+    def __init__(self):
+        self.user_name = ""
+        self.university = ""
+        self.semester = ""
+
+    def greet(self):
+        return "Hi! What can I do for you?"
+
+    def set_user_info(self, user_name, university, semester):
+        self.user_name = user_name
+        self.university = university
+        self.semester = semester
+
+    def respond(self, user_input):
+        # Example of a simple response
+        return f"You said: {user_input}"
+
+# Demo Chatgpt
+def build_demo_chatgpt():
+    chatgpt = ChatGPT()
+    return chatgpt
+
+# Example usage:
+demo_chatgpt = build_demo_chatgpt()
+print(demo_chatgpt.greet())
+user_input = input("You: ")
+print(demo_chatgpt.respond(user_input))
