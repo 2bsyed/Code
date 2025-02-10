@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Abrar Fiaz - CV</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Jan 10 Photo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%);
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin: 30px 0;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: block;
+            background-color: #ddd; /* Placeholder for profile picture */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .skills, .hobbies, .achievements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill, .hobby, .achievement {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 15px;
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-top: 5px;
+            height: 20px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .progress-bar-fill:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            width: 20px;
+            border-radius: 10px;
+            animation: shine 2s infinite linear;
+        }
+
+        @keyframes shine {
+            0% { left: -20px; }
+            100% { left: 100%; }
+        }
+
+        .c-fill { background: linear-gradient(45deg, #3498db, #2980b9); width: 90%; }
+        .cpp-fill { background: linear-gradient(45deg, #2ecc71, #27ae60); width: 85%; }
+        .java-fill { background: linear-gradient(45deg, #f1c40f, #f39c12); width: 70%; }
+        .python-fill { background: linear-gradient(45deg, #e67e22, #d35400); width: 70%; }
+        .embeded-c-fill { background: linear-gradient(45deg, #9b59b6, #8e44ad); width: 65%; }
+        .android-fill { background: linear-gradient(45deg, #1abc9c, #16a085); width: 75%; }
+        .html-fill { background: linear-gradient(45deg, #e74c3c, #c0392b); width: 75%; }
+
+        .gradient-heading {
+            background: linear-gradient(to right, #f12711, #f5af19);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .achievement, .hobby {
+            flex: 1 1 calc(33.333% - 10px); /* Responsive layout */
+        }
+
+        /* Hover effects */
+        .skill:hover, .hobby:hover, .achievement:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        /* Add some more dynamic interactions */
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #2980b9, #6dd5fa);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #6dd5fa, #2980b9);
+        }
+
+        .emoji {
+            margin-right: 8px;
+        }
+
+        /* Social Media Links */
+        .social-media {
+            text-align: center;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: #2980b9;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .social-media a:hover {
+            color: #f12711;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="gradient-heading">Syed Abrar Fiaz</h1>
+        <p>BSc in CSE, Daffodil International University</p>
+
+        <!-- Profile Picture -->
+        <div class="profile-picture">
+            <img src="Jan 10 Photo.jpg" alt="Syed Abrar Fiaz">
+        </div>
+
+        <!-- About Yourself Section -->
+        <section>
+            <h2>👤 About Yourself</h2>
+            <p>
+                I am Syed Abrar Fiaz, a dedicated and tech-enthusiast currently pursuing my BSc in CSE from Daffodil International University. 
+                With a passion for learning, leadership, and technology, I strive to push my boundaries, develop new skills, and contribute meaningfully to projects and communities around me.
+            </p>
+        </section>
+
+        <!-- Mission Section -->
+        <section>
+            <h2>🎯 Mission</h2>
+            <p>To excel in the tech industry by continually enhancing my programming and problem-solving skills and contributing to meaningful innovations that impact society positively.</p>
+        </section>
+
+        <!-- Vision Section -->
+        <section>
+            <h2>👁 Vision</h2>
+            <p>To be recognized as a leading developer in the fields of IoT and software development, contributing to technological advancements on a global scale.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>🌟 Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <strong>💻 C (Advanced)</strong>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill c-fill"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <strong>💻 C++ (Advanced)</strong>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill cpp-fill"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <strong>💻 Java (Medium)</strong>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill java-fill"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <strong>💻 Python (Medium)</strong>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill python-fill"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <strong>💻 Embedded C (Medium)</strong>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill embeded-c-fill"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <strong>📱 Android App Development</strong>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill android-fill"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <strong>💻 HTML (Medium)</strong>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill html-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2>🎓 Education</h2>
+            <ul>
+                <li><strong>BSc in CSE</strong> - Daffodil International University</li>
+                <li><strong>Higher School Certificate</strong> - Govt Sundarban Adarsha College, Khulna</li>
+                <li><strong>Senior School Certificate</strong> - Khulna Zilla School</li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section>
+            <h2>🏆 Achievements</h2>
+            <div class="achievements">
+                <div class="achievement">🏅 Section-wise Champion in Take-off Contest</div>
+                <div class="achievement">🏅 Completed Unlock the Algorithm (Preliminary Round) - 14th Place</div>
+                <div class="achievement">🏅 Attended ICPC</div>
+                <div class="achievement">🏅 First Prize in University Orientation Class by Go Edu</div>
+                <div class="achievement">🏅 Built IoT project detecting oxygen levels using Arduino and gas sensor</div>
+                <div class="achievement">🏅 Developed the DIU Transport App</div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section>
+            <h2>🔗 Connect with Me</h2>
+            <div class="social-media">
+                <a href="https://www.facebook.com/2beSyed/" target="_blank">Facebook</a> |
+                <a href="https://leetcode.com/u/2bSyed/" target="_blank">LeetCode</a> |
+                <a href="https://vjudge.net/user/2bsyed" target="_blank">Vjudge</a> |
+                <a href="https://codeforces.com/profile/2bsyed" target="_blank">Codeforces</a> |
+                <a href="https://judge.beecrowd.com/en/profile/666316" target="_blank">Beecrowd</a> |
+                <a href="https://toph.co/u/user.815790" target="_blank">Toph</a> |
+                <a href="https://www.linkedin.com/in/syed-abrar-erteza-8ba518329/" target="_blank">LinkedIn</a> |
+                <a href="https://www.fiverr.com/syedabrarerteza/buying?source=avatar_menu_profile" target="_blank">Fiverr</a>
+            </div>
+        </section>
+
+        <button>Download PDF</button>
+    </div>
+</body>
+
+</html>
